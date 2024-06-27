@@ -12,7 +12,7 @@ function Freebook() {
     const freeBooks = async () => {
       try {
         const books = await axios.get(
-          "http://localhost:4001/book_store/books/get_book"
+          "https://book-store-backend-alpha.vercel.app/book_store/books/get_book"
         );
         setFreeBook(books.data.filter((data) => data.category === "Free"));
       } catch (error) {

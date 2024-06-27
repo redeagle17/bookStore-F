@@ -49,7 +49,7 @@ function Signup() {
       };
       try {
         const res = await axios.post(
-          "http://localhost:4001/book_store/users/sign_up",
+          "https://book-store-backend-alpha.vercel.app/book_store/users/sign_up",
           userData
         );
         if (res.data) {
